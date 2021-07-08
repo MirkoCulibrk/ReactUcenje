@@ -1,0 +1,12 @@
+section{
+    padding: 30px 20px;
+    width: 80%;
+    h2{
+        color:#fff;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

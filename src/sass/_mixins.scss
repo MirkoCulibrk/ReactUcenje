@@ -1,0 +1,9 @@
+@mixin flex(){
+    display: flex;
+    align-items:center;
+}
+@mixin font($size,$weight){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}

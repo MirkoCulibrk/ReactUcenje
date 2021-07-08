@@ -1,0 +1,14 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+header{
+    background-color: $mainColor;
+    padding: 15px;
+    margin:0 auto;
+    @include flex();
+        a{
+            color:$mainTextColor;
+            text-transform: uppercase;
+            @include font(1.2rem,600);
+            margin: 10px 100px 10px 10px;
+        }      
+}

@@ -1,0 +1,27 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+nav{
+    display: flex;
+    width: 15%;
+    background-color: $navigationColor;
+    padding: 50px 0;
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        li{
+            padding: 10px 0 10px 25px;
+            cursor: pointer;
+            @include font(1.1rem,400);
+            &:hover{
+                background-color: $backgroundColor;
+                a{
+                    color:$mainColor;
+                }
+            }
+        }
+        a{
+            color:#fff;
+        }
+    }
+}

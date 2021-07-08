@@ -1,0 +1,49 @@
+@import '../../../sass/variables';
+.autocomplete{
+    position: relative;
+    margin-top: 20px;
+}
+input {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    width: 300px;
+}
+  
+.no-suggestions {
+    color: #fff;
+    padding: 0.5rem;
+    display: block;
+
+}
+  
+.suggestions {
+    border: 1px solid #999;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 143px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: 300px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 30;
+    top: 34px;
+    li{
+        padding: 0.5rem;
+    }
+    .suggestion-active,li:hover{
+        color:#fff;
+        background-color: #999;
+        cursor: pointer;
+        font-weight: 700;
+    }
+  }
+  
+ 
+  
+  
+  
+  .suggestions li:not(:last-of-type) {
+    border-bottom: 1px solid #999;
+  }

@@ -1,0 +1,25 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+form{
+    position: relative;
+    input{
+        border-radius: 15px;
+        border:2px solid #fff;
+        padding: 5px 10px 5px 35px;
+        background-color: transparent;
+        color:$mainTextColor;
+        @include font(0.9rem,400);
+        &::placeholder{
+            color:$mainTextColor;
+        }
+    }
+    img{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+        color: #fff;
+        left: 10px;
+        top:8px;
+    }
+}

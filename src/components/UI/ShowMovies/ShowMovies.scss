@@ -1,0 +1,27 @@
+.paginationBtns{
+    margin-top: 35px;
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    a{
+        padding: 10px;
+        margin: 8px;
+        border-radius: 5px;
+        border:1px solid #fff;
+        color:#fff;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+            color:#222B31;
+        }
+    }
+    .paginationActive a{
+        background-color: #fff;
+        color:#222B31;
+    }
+    .paginationDisabled{
+        pointer-events: none;
+    }
+}
